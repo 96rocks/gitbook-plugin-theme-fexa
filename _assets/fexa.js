@@ -74,6 +74,6 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     gitbook.events.on('page.change', function() {
         setBase();
-        generateSectionNavigator();
+        //generateSectionNavigator();
     });
 });

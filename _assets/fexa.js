@@ -13,6 +13,11 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
 
     //生成内容导航
     function generateSectionNavigator(){
+        var showToc = gitbook.state.page.showToc;
+
+        if (showToc != false) {
+
+        $(".book-anchor-title").append("On this page:")
         $(".page-inner .markdown-section").find("h1,h2,h3").each(function(){
             var cls="anchor-h1";
             if($(this).is("h2")){
@@ -41,7 +46,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
             hash = hash.substring(1);
             $("#an_"+hash).addClass("selected");
         }
-        
+	} 
     }
 
     //基础设置

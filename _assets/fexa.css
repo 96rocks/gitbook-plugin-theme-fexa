@@ -68,7 +68,7 @@ body {
 
 .page-inner {
   max-width: none;
-  padding: 20px 270px 40px 40px;
+  padding: 20px 200px 40px 40px;
 }
 
 .header-inner #book-search-input {
@@ -175,6 +175,7 @@ body {
     top: 101px;
   }
   .header-inner #book-search-input {
+	visibility: hidden;
     clear: both;
     width: 100%;
   }
@@ -186,6 +187,11 @@ body {
   .book-anchor {
 	visibility: hidden;
     clear: both;
+    width: 100%;
+  }
+
+  .header-nav {
+	visibility: hidden;
   }
 }
 /*Book inner page end*/
@@ -195,7 +201,7 @@ body {
   width: 180px;
   position: absolute;
   top: 130px;
-  right: 30px;
+  right: 100px;
   padding: 0 10px 10px 10px;
   z-index: 999;
   user-select: none;

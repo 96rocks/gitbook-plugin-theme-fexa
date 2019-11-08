@@ -178,6 +178,15 @@ body {
     clear: both;
     width: 100%;
   }
+
+  .page-inner {
+    max-width: none;
+    padding: 20px 20px 40px 40px;
+  }
+  .book-anchor {
+	visibility: hidden;
+    clear: both;
+  }
 }
 /*Book inner page end*/
 

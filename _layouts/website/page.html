@@ -6,8 +6,6 @@
 		<div class="logo"></div>
 		<span class="title"></span>
 
-		<!-- Search -->
-		{% block search_input %}{% endblock %}
 
 		<!-- Nav -->
 		<ul class="header-nav">
@@ -16,6 +14,8 @@
 				<a href="{{nav.url}}" target="{{ nav.target}}">{{ nav.name }}</a>
 			</li>
 			{%- endfor %}
+		<!-- Search -->
+		{% block search_input %}{% endblock %}
 		</ul>
 	</div>
 
